@@ -35,8 +35,8 @@ int getLastID(const char *path);
  
 int main() {
     // Please uncomment in last commit
-    // pid_t pid, sid;
-    // int *status = daemonUtil(&pid, &sid);
+    pid_t pid, sid;
+    int *status = daemonUtil(&pid, &sid);
     
     socklen_t addrlen;
     struct sockaddr_in new_addr;
